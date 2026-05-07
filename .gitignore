@@ -1,0 +1,13 @@
+data/*
+UTKFace/*
+UTKFaceRandom1K/*
+validation_visualized/*
+vis_UTKFaceRandom1K/*
+visualizations_UTKFaceRandom1K/*
+images/*
+__pycache__/*
+new_val_vis/*
+age_gender_fine_tuned/*
+fairface_finetuned/*
+my_age_gender_model/*
+final_production_model/*
