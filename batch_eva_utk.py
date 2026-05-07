@@ -12,7 +12,7 @@ DATASET_PATH = "UTKFaceRandom1K"
 # RESULTS_CSV = "DeepFace/results/UTKFaceRandom1K.csv"
 VISUALIZATION_DIR = "vis_UTKFaceRandom1K/"
 valid_extensions = ('.jpg', '.jpeg', '.png')
-MODEL_PATH = './my_age_gender_model/checkpoint-5930'
+MODEL_PATH = './age_gender_fine_tuned/checkpoint-11860'
 
 # Create the output directory if it doesn't exist
 os.makedirs(VISUALIZATION_DIR, exist_ok=True)
@@ -110,7 +110,7 @@ for filename in tqdm(image_files, desc="Processing Faces"):
     except Exception as e:
         pass
 
-    # if len(results_data)>200: break
+    # if len(results_data)>=200: break
 
 # --- 5. Process and Save Data ---
 df = pd.DataFrame(results_data)

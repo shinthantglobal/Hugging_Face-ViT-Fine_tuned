@@ -11,3 +11,10 @@ age_gender_fine_tuned/*
 fairface_finetuned/*
 my_age_gender_model/*
 final_production_model/*
+new_model_metrics/*
+output_new_video/*
+output_video/*
+video/*
+yolov8n-face.pt 
+yolov8n.pt
+
