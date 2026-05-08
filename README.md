@@ -124,7 +124,3 @@ and corresponding image folders in:
 - Add a prediction wrapper around `model.py` for batch inference.
 - Create a dataset conversion script to standardize `metadata.csv` across datasets.
 - Add evaluation scripts for age MAE and gender classification accuracy.
-
-## Contact
-
-Use this repository as a starting point for multi-task age and gender prediction with HuggingFace Transformers.
