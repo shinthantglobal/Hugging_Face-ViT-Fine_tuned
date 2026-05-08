@@ -10,6 +10,10 @@ This repository contains a two-stage training pipeline for an age and gender pre
 - `inference.py`: Simple inference example for the final trained model.
 - `load_data.py`: Dataset loader example using HuggingFace `FairFace` dataset.
 
+## System Flowchart
+
+![Flowchart](flowchart.png)
+
 ## What the model predicts
 
 The model outputs a single tensor with two values:
