@@ -17,4 +17,4 @@ output_video/*
 video/*
 yolov8n-face.pt 
 yolov8n.pt
-
+validation_visualizefairface_cleaned_output/*

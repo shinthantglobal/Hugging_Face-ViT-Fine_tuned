@@ -8,9 +8,9 @@ from transformers import AutoImageProcessor
 from model import AgeGenderViTModel  # Your custom class
 
 # --- Configuration ---
-CSV_PATH = "./validation/metadata.csv" 
-DATASET_PATH = "./validation/"
-VISUALIZATION_DIR = "./validation_visualized/"
+CSV_PATH = "../fairface_cleaned/fairface_cleaned.csv" 
+DATASET_PATH = "../fairface_cleaned/"
+VISUALIZATION_DIR = "./validation_visualizefairface_cleaned_output/"
 MODEL_PATH = "./my_age_gender_model/checkpoint-5930"  # Path to your trained weights
 
 # Create the output directory if it doesn't exist
@@ -46,7 +46,7 @@ def parse_age_range(age_str):
             return val, val, val
 
 # Load dataset metadata
-df = pd.read_csv(CSV_PATH)[:200]
+df = pd.read_csv(CSV_PATH)
 results_data = []
 
 print(f"Starting ViT evaluation on FairFace dataset ({len(df)} images)...")
