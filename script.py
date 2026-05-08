@@ -61,7 +61,7 @@ class MultiTaskTrainer(Trainer):
         gender_loss = loss_fct_gender(gender_logits, gender_labels)
         
         # Total Weighted Loss (Scaling age down by 0.01)
-        loss = (age_loss * 0.1) + gender_loss
+        loss = (age_loss * 0.01) + gender_loss
         
         return (loss, outputs) if return_outputs else loss
 
